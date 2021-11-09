@@ -7,6 +7,7 @@ import cardImages from './cardImages'
 
 function App() {
   const [cards, setCards] = useState([])
+  // eslint-disable-next-line no-unused-vars
   const [turns, setTurns] = useState(0)
   const [matches, setMatches] = useState(0)
   const [choiceOne, setChoiceOne] = useState(null)
