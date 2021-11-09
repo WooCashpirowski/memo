@@ -18,20 +18,39 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1024px;
     margin: 20px auto;
   }
-  button {
-    background: none;
-    border: 2px solid #fff;
-    padding: 6px 12px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.75em;
-    transition: all 0.5s ease;
-    &:hover {
-      background: #c23866;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 3em;
+    h1 {
+      span {
+        font-size: 1.3em;
+      }
+      &.matches {
+        span {
+          color: #c23866;
+        }
+      }
+    }
+    button {
+      background: none;
+      border: 2px solid #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.75em;
+      transition: all 0.5s ease;
+      &:hover {
+        background: #c23866;
+      }
     }
   }
+
 
   .grid {
     margin: 20px 0 5px;
