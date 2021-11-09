@@ -7,7 +7,6 @@ import cardImages from './cardImages'
 
 function App() {
   const [cards, setCards] = useState([])
-  // eslint-disable-next-line no-unused-vars
   const [turns, setTurns] = useState(0)
   const [matches, setMatches] = useState(0)
   const [choiceOne, setChoiceOne] = useState(null)
@@ -65,8 +64,15 @@ function App() {
       <>
         <GlobalStyles />
         <div className="App">
-          <h1>LOL Memory {matches}</h1>
-          <button onClick={shuffleCards}>Nowa gra</button>
+          <div className="header">
+            <h1 className="turns">
+              TURY <span> {turns}</span>
+            </h1>
+            <button onClick={shuffleCards}>Nowa gra</button>
+            <h1 className="matches">
+              PARY <span> {matches}</span>
+            </h1>
+          </div>
 
           <div className="grid">
             {cards.map((card) => (
